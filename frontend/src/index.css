@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #534AB7;
+  --color-success: #1D9E75;
+  --color-warning: #EF9F27;
+  --color-danger: #E24B4A;
+  --color-bg-light: #EEEDFE;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-light text-gray-900 antialiased selection:bg-primary selection:text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
